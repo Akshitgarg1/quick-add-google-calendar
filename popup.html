@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Calendar</title>
+
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI";
+      width: 320px;
+      padding: 16px;
+      background: #f8fafc;
+      color: #0f172a;
+    }
+
+    h1 {
+      font-size: 20px;
+      margin: 0 0 14px 0;
+      font-weight: 700;
+    }
+
+    label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: #334155;
+    }
+
+    select {
+      width: 100%;
+      padding: 12px;
+      font-size: 15px;
+      border-radius: 10px;
+      border: 1px solid #cbd5f5;
+      background: white;
+      outline: none;
+    }
+
+    select:focus {
+      border-color: #2563eb;
+    }
+
+    .preview {
+      margin-top: 16px;
+      padding: 14px;
+      border-radius: 14px;
+      background: white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .preview-title {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #1e293b;
+      line-height: 1.3;
+    }
+
+    .preview-time {
+      font-size: 14px;
+      font-weight: 500;
+      color: #475569;
+    }
+
+    .hint {
+      margin-top: 8px;
+      font-size: 12px;
+      color: #64748b;
+    }
+
+    button {
+      margin-top: 18px;
+      width: 100%;
+      padding: 14px;
+      font-size: 16px;
+      font-weight: 700;
+      border-radius: 14px;
+      border: none;
+      cursor: pointer;
+      background: linear-gradient(135deg, #2563eb, #1e40af);
+      color: white;
+      transition: transform 0.08s ease, box-shadow 0.08s ease;
+    }
+
+    button:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px rgba(37,99,235,0.35);
+    }
+
+    button:active {
+      transform: translateY(0);
+      box-shadow: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Quick Add</h1>
+
+  <label for="eventType">Event Type</label>
+  <select id="eventType">
+    <option value="Contest">Contest</option>
+    <option value="Interview">Interview</option>
+    <option value="Exam">Exam</option>
+    <option value="Meeting">Meeting</option>
+  </select>
+
+  <div class="preview">
+    <div class="preview-title" id="previewTitle">
+      [Contest] New Event
+    </div>
+
+    <div class="preview-time" id="previewTime">
+      📅 Select text on a webpage
+    </div>
+
+    <div class="hint">
+      Highlight text → open extension → press Enter
+    </div>
+  </div>
+
+  <button id="addEvent">
+    ➕ Add to Google Calendar
+  </button>
+
+  <script src="popup.js"></script>
+</body>
+</html>

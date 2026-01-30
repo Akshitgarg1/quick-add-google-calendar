@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Quick Add to Google Calendar",
+  "version": "1.0",
+  "description": "Add events to Google Calendar in one click",
+  "permissions": ["activeTab"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
