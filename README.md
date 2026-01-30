@@ -19,6 +19,19 @@ Designed for **competitive programmers, students, and job seekers** who don’t 
 
 ---
 
+## 📸 Screenshots
+
+### Extension Popup
+![Extension Popup](screenshots/popup-ui.png)
+
+### Auto-detected Date & Time
+![Preview Detected](screenshots/preview-detected.png)
+
+### Google Calendar Event
+![Calendar Event](screenshots/calendar-event.png)
+
+---
+
 ## 📌 Supported Date & Time Formats
 
 ### Date formats
